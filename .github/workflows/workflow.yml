@@ -4,9 +4,7 @@ name: Sample App deploy
 
 # Controls when the workflow will run
 on:
-  push:
-      branches:
-        - main
+  workflow_dispatch:
 
 env:
   AZURE_WEBAPP_NAME: "${{secrets.AZURE_WEBAPP_NAME}}"    # set this to your application's name
